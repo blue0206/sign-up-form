@@ -82,7 +82,7 @@ header {
     color: white;
 
     align-self: stretch;
-    backdrop-filter: blur(16px);
+    backdrop-filter: brightness(75%);
     text-align: center;
 }
 
@@ -98,7 +98,7 @@ header {
     gap: 1rem;
     margin-top: 4rem;
 
-    backdrop-filter: blur(5px);
+    backdrop-filter: brightness(75%);
     align-self: stretch;
 }
 
