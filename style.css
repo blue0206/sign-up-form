@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "roboto";
+    src: 
+        url("./files/fonts/roboto-regular-webfont.woff2") format("woff2"),
+        url("./files/fonts/roboto-regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: 
+        url("./files/fonts/roboto-italic-webfont.woff2") format("woff2"),
+        url("./files/fonts/roboto-italic-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: 
+        url("./files/fonts/roboto-bold-webfont.woff2") format("woff2"),
+        url("./files/fonts/roboto-bold-webfont.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: 
+        url("./files/fonts/roboto-bolditalic-webfont.woff2") format("woff2"),
+        url("./files/fonts/roboto-bolditalic-webfont.woff") format("woff");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "harry-potter";
+    src: 
+        url("./files/fonts/harryp__-webfont.woff2") format("woff2"),
+        url("./files/fonts/harryp__-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "game-of-squids";
+    src: 
+        url("./files/fonts/game_of_squids-webfont.woff2") format("woff2"),
+        url("./files/fonts/game_of_squids-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
