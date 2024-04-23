@@ -45,7 +45,7 @@
 
 :root {
     --content-font: 1.2rem;
-    --heading-font: 2.8rem;
+    --heading-font: 3.2rem;
     --section-width: min(100%, 65ch);
 }
 
@@ -86,7 +86,7 @@ header {
     text-align: center;
 }
 
-#credit > a {
+#credit > div > a {
     color: white;
 }
 
@@ -94,8 +94,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
     margin-top: 4rem;
-    
+
     backdrop-filter: blur(5px);
     align-self: stretch;
 }
@@ -105,6 +107,11 @@ h1 {
     font-size: var(--heading-font);
     letter-spacing: 0.5rem;
     color: white;
+}
+
+img {
+    width: var(--heading-font);
+    height: auto;
 }
 
 main {
