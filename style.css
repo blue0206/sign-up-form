@@ -51,3 +51,27 @@
     font-weight: normal;
     font-style: normal;
 }
+
+:root {
+    --content-font: 1.2rem;
+    --heading-font: 2.8rem;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+
+    flex-grow: 1;
+}
+
+h1 {
+    font-family: "harry-potter", "game-of-squids", "roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--heading-font);
+}
+
+main {
+    flex-grow: 5;
+}
