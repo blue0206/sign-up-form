@@ -9,13 +9,57 @@
 </head>
 <body>
     <header>
-        <h1>BLUE</h1>
+        <div class="head">
+            <h1>BLUE</h1>
+        </div>
     </header>
     <main>
-
+        <section class="intro">
+            <p>
+                This is not a real service! You know you need something like this
+                in your life to help you realize your deepest dreams. Sign up
+                <em>now</em> to get started.
+            </p>
+            <p>
+                You <em>know</em> you want to.
+            </p>
+        </section>
+        <section class="form">
+            <p>Let's do this!</p>
+            <form action="" method="post">
+                <div class="form-element">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="first-name" id="first-name" required>
+                </div>
+                <div class="form-element">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="last-name" id="last-name" required>
+                </div>
+                <div class="form-element">
+                    <label for="mail">EMAIL</label>
+                    <input type="email" name="email" id="mail" required>
+                </div>
+                <div class="form-element">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" name="phone-number" id="phone" required>
+                </div>
+                <div class="form-element">
+                    <label for="pass">PASSWORD</label>
+                    <input type="password" name="password" id="pass" required>
+                </div>
+                <div class="form-element">
+                    <label for="confirm-pass">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-pass" required>
+                </div>
+            </form>
+        </section>
+        <section class="action">
+            <button type="submit" formaction="">Create Account</button>
+            <div>
+                Already have an account? 
+                <a href="#header">Log in</a>
+            </div>
+        </section>
     </main>
-    <footer>
-        
-    </footer>
 </body>
 </html>
