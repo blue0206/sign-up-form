@@ -59,11 +59,35 @@ body {
     font-size: var(--content-font);
 
     min-height: 98vh;
+    overflow: auto;
 }
 
 header {
     flex-grow: 1;
     flex-basis: 42%;
+
+    background-image: url("./files/background.jpg");
+    background-position: top;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#credit {
+    margin-bottom: 1rem;
+    font-size: calc(var(--content-font) - 0.4rem);
+    color: white;
+
+    align-self: stretch;
+    backdrop-filter: blur(16px);
+    text-align: center;
+}
+
+#credit > a {
+    color: white;
 }
 
 .head {
@@ -71,12 +95,16 @@ header {
     flex-direction: row;
     justify-content: center;
     margin-top: 4rem;
+    
+    backdrop-filter: blur(5px);
+    align-self: stretch;
 }
 
 h1 {
     font-family: "game-of-squids", "roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: var(--heading-font);
     letter-spacing: 0.5rem;
+    color: white;
 }
 
 main {
