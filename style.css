@@ -46,6 +46,7 @@
 :root {
     --content-font: 1.2rem;
     --heading-font: 2.8rem;
+    --section-width: min(100%, 65ch);
 }
 
 body {
@@ -91,7 +92,7 @@ main {
 }
 
 section {
-    width: min(100%, 65ch);
+    width: var(--section-width);
     padding: 1rem;
 }
 
@@ -105,6 +106,7 @@ section {
 
 .form {
     flex-grow: 1;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -122,13 +124,18 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2rem;
+    align-content:space-evenly;
+
+    width: var(--section-width);
 }
 
 
 .form-element {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap:2px;
+
+    flex-basis: 40%;
 }
 
 .action {
@@ -137,6 +144,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 2rem;
 }
 
 p {
@@ -149,4 +157,22 @@ input, button, label {
     margin: 0;
     font-family: inherit;
     font-size: 100%;
+}
+
+button {
+    width: max-content;
+    padding: 0.2rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+label {
+    letter-spacing: 1.5px;
+    font-size: calc(var(--content-font) - 0.4rem);
+    font-weight: 800;
+    color: rgb(92, 92, 92);
+}
+
+input {
+    padding: 2px;
 }
