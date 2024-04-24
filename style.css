@@ -195,6 +195,9 @@ input, button, label {
     margin: 0;
     font-family: inherit;
     font-size: 100%;
+    border: none;
+    box-sizing: border-box;
+    background: none;
 }
 
 button {
@@ -220,6 +223,26 @@ label {
     color: rgb(92, 92, 92);
 }
 
+
 input {
     padding: 2px;
+    border: 1.5px solid rgb(128, 127, 127);
+    border-radius: 4px;
+    font-size: calc(var(--content-font) - 0.16rem);
+}
+
+input:focus, input:active {
+    outline: 1.4px solid blue;
+    border-radius: 4px;
+    box-shadow: 1.2px 1.2px 8px 1.2px rgb(85, 85, 85);
+    background-color: rgb(227, 234, 241);
+}
+
+input:hover {
+    background-color: rgb(227, 234, 241);
+}
+
+input:invalid {
+    outline: 1.4px solid red;
+    box-shadow: none;
 }
