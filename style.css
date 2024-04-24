@@ -200,7 +200,7 @@ input, button, label {
     background: none;
 }
 
-button {
+button[type="submit"] {
     width: max-content;
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
@@ -210,11 +210,17 @@ button {
     background-color: rgb(6, 114, 216);
 }
 
-button:hover, button:focus {
+button[type="submit"]:hover, button[type="submit"]:focus {
     cursor: pointer;
     background-color: rgb(196, 255, 171);
     color: rgb(8, 20, 73);
 }
+
+button.log-in {
+    cursor: pointer;
+    color: rgb(6, 114, 216);
+}
+
 
 label {
     letter-spacing: 1.5px;
