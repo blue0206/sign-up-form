@@ -59,11 +59,11 @@
                 </div>
                 <div class="form-element">
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone-number" id="phone" />
+                    <input type="tel" name="phone-number" id="phone" pattern="0?\d{10}" />
                 </div>
                 <div class="form-element">
                     <label for="pass">PASSWORD</label>
-                    <input type="password" name="password" id="pass" />
+                    <input type="password" name="password" id="pass" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,}" />
                 </div>
                 <div class="form-element">
                     <label for="confirm-pass">CONFIRM PASSWORD</label>
