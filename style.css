@@ -257,3 +257,55 @@ input:not(.empty):invalid {
     color: red;
     font-size: calc(var(--content-font) - 0.48rem);
 }
+
+.login {
+    position: absolute;
+    align-self: center;
+
+    min-height: 55vh;
+    width: max(45vw, 65ch);
+    padding: 1rem;
+
+    background-image: url("./files/background.jpg");
+    background-position: top;
+    background-size: cover;
+
+    box-shadow: 0 0 11px 100vw rgba(0, 0, 0, 0.842);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;  
+}
+
+div > h2 {
+    color: aliceblue;
+    backdrop-filter: blur(11px);
+    font-size: calc(var(--heading-font) - 0.5rem);
+}
+
+.login > div {
+    flex-basis: 35%;
+    margin: 0;
+}
+
+#account-login {
+    flex-basis: 65%;
+
+    width: fit-content;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border: 1.4px solid black;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#account-login > div, #account-login > button {
+    flex-basis: 0;
+}
