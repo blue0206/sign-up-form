@@ -39,7 +39,8 @@ let titleText = "The password must contain:\n" +
                 "1. At least one lower-case alphabet\n" +
                 "2. At least one upper-case alphabet\n" +
                 "3. At least one digit\n" +
-                "4. At least one symbol (!,@,#,$,etc)";
+                "4. At least one symbol (!,@,#,$,etc)" +
+                "5. At least 8 characters";
 pass.setAttribute("title", titleText);
 
 //Set event listener for log in button
