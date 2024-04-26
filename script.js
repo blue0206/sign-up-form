@@ -21,3 +21,11 @@ const pass = document.querySelector('#pass');
 confirmPass.addEventListener('input', () => {
     confirmPass.setAttribute('pattern', pass.value);
 });
+
+//Set password input title
+let titleText = "The password must contain:\n" + 
+                "1. At least one lower-case alphabet\n" +
+                "2. At least one upper-case alphabet\n" +
+                "3. At least one digit\n" +
+                "4. At least one symbol (!,@,#,$,etc)";
+pass.setAttribute("title", titleText);
