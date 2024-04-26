@@ -41,3 +41,18 @@ let titleText = "The password must contain:\n" +
                 "3. At least one digit\n" +
                 "4. At least one symbol (!,@,#,$,etc)";
 pass.setAttribute("title", titleText);
+
+//Set event listener for log in button
+const loginPanel = document.querySelector(".login");
+const loginPanelBtn = document.querySelector(".log-in");
+
+loginPanelBtn.addEventListener('click', () => {
+    loginPanel.style.visibility = "visible";
+});
+
+//Set event listener for login panel close button
+const closeBtn = document.querySelector('.exit-login');
+
+closeBtn.addEventListener('click', () => {
+    loginPanel.style.visibility = "hidden";
+});
