@@ -15,11 +15,23 @@ for (let i=0; i<inputList.length; i++)
 }
 
 //Password-match checking algorithm
+const passContainer = document.querySelector('.pass');
 const confirmPass = document.querySelector('#confirm-pass');
 const pass = document.querySelector('#pass');
+const prompt = document.createElement('div');
 
 confirmPass.addEventListener('input', () => {
     confirmPass.setAttribute('pattern', pass.value);
+    if (confirmPass.value != pass.value)    
+    {
+        prompt.textContent = "* Passwords do not match";
+        passContainer.appendChild(prompt);
+    }
+    else
+    {
+        prompt.textContent = "";
+        passContainer.appendChild(prompt);
+    }
 });
 
 //Set password input title

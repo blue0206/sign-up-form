@@ -252,3 +252,8 @@ input:not(.empty):invalid {
     outline: 1.4px solid red;
     box-shadow: none;
 }
+
+.pass {
+    color: red;
+    font-size: calc(var(--content-font) - 0.48rem);
+}
