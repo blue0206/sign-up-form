@@ -248,7 +248,7 @@ input:hover {
     background-color: rgb(227, 234, 241);
 }
 
-input:invalid {
+input:not(.empty):invalid {
     outline: 1.4px solid red;
     box-shadow: none;
 }

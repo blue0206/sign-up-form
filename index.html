@@ -47,27 +47,27 @@
             <form action="" method="post" id="create-account">
                 <div class="form-element">
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name" />
+                    <input type="text" name="first-name" id="first-name" class="empty" required />
                 </div>
                 <div class="form-element">
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name" />
+                    <input type="text" name="last-name" id="last-name" class="empty" required />
                 </div>
                 <div class="form-element">
                     <label for="mail">EMAIL</label>
-                    <input type="email" name="email" id="mail" />
+                    <input type="email" name="email" id="mail" class="empty" required />
                 </div>
                 <div class="form-element">
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone-number" id="phone" pattern="0?\d{10}" />
+                    <input type="tel" name="phone-number" id="phone" pattern="0?\d{10}" class="empty" required />
                 </div>
                 <div class="form-element">
                     <label for="pass">PASSWORD</label>
-                    <input type="password" name="password" id="pass" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,}" />
+                    <input type="password" name="password" id="pass" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,}" class="empty" required />
                 </div>
                 <div class="form-element">
                     <label for="confirm-pass">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-pass" />
+                    <input type="password" id="confirm-pass" class="empty" required />
                 </div>
             </form>
         </section>
